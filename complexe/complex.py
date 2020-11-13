@@ -35,7 +35,7 @@ class complex:
         return complex(comp3.reel, comp3.imaginaire)
 
     def mod(self):
-        """Calcul du module d'un complexe"""
+        """Calcul du module d'un complexe z1 = complex(1,2) z1.mod() = racine(5)"""
         comp4 = complex()
         comp4.reel = self.reel * self.reel
         comp4.imaginaire = self.imaginaire * self.imaginaire
@@ -43,7 +43,7 @@ class complex:
         return (math.sqrt(modulo))
 
     def coord(self):
-        """Determine les coordonéés d'un complexe"""
+        """Determine les coordonéés d'un complexe z1 = complex(1,2) z1.coord() = (1/racine(5), 2/racine(5)"""
         cos = self.reel/self.mod()
         sin = self.imaginaire / self.mod()
 
@@ -51,7 +51,7 @@ class complex:
 
 
     def point_Cercle(self,x,y):
-        """Nous donnes le point sur le cercle trigonométrique par rapport a ces coordonnée, donc sont argument  """
+        """Nous donnes le point sur le cercle trigonométrique par rapport a ces coordonnée, donc sont argument z1.z1.point_Cercle(1/2,math.sqrt(3)/2) == math.pi/3 """
         if(x == 1/2 and y == math.sqrt(3)/2) :
             coord = math.pi/3
         elif(x == math.sqrt(2)/2 and y == math.sqrt(2) / 2) :
